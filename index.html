@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Список дел</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+   <div class="heading"> <img src="img/task-list.png">
+    <h1>Список дел</h1></div>
+    <form class="add-form" action="#" method="post">
+      <input class="add-form-input" type="text"  aria-label="Описание задачи" placeholder="Что-то сделать" required>
+      <button class="add-form-button" type="submit">Добавить задачу</button>
+    </form>
+    <div class="active-tasks">
+      <h2>Активные задачи:</h2>
+    <ul class="todo-list">
+      <!-- <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" data-action="done" type="checkbox">
+          <span>Покормить кота</span>
+      <input class="edit-inp" type="text">
+        </label>
+        <span class="edit"><img src="img/edit.png" alt="" width="25px"></span>
+        <span class="close" data-action="delete"><img  data-action="delete" src="img/delete.png" width="25px"></span> 
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox" data-action="done">
+          <span>Посмотреть сериал</span>
+          
+      <input class="edit-inp" type="text">
+      
+        </label>
+        <span class="edit"><img src="img/edit.png" alt="" width="25px"></span>
+        <span class="close" data-action="delete"><img  data-action="delete" src="img/delete.png" width="25px"></span>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox" data-action="done">
+          <span>Почитать ТЖ</span>
+          
+      <input class="edit-inp" type="text">
+         
+        </label>
+        <span class="edit"><img src="img/edit.png" alt="" width="25px"></span>
+        <span class="close" data-action="delete"><img  data-action="delete" src="img/delete.png" width="25px"></span>
+      </li> -->
+    </ul>
+    <p class="empty-tasks hidden">Все задачи выполнены. Новых задач нет.</p>
+   </div>
+<div class="completed">
+<h2>Завершенные задачи:</h2>
+  <ul  class="todo-list">
+
+  </ul>
+
+</div>
+    <!-- <template id="task-template">
+      <li class="todo-list-item">
+        <label>
+          <input type="checkbox" class="todo-list-input">
+          <span></span>
+          
+          <input class="edit-inp" type="text">
+        </label>
+        <span class="edit"><img src="img/edit.png" alt="" width="25px"></span>
+        <span class="close"><img src="img/delete.png" width="25px"></span>
+      </li>
+    </template> -->
+    <script src="script.js"></script>
+  </body>
+</html>
