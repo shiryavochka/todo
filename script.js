@@ -38,7 +38,7 @@ function AddTask (evt) {
 }
 
 function showMessage() {
-    if (tasks.length === 0) {
+    if (tasks.filter(task => task.done === false).length === 0) {
         message.classList.remove('hidden');
     }
     else {
@@ -125,5 +125,6 @@ function completedTask (evt) {
             list.append(item);
   }
     localStorage.setItem('tasks', JSON.stringify(tasks));
+    showMessage();
 } 
  
